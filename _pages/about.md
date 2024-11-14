@@ -8,9 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-About me
-===============
-
 Howdy, and thanks for visiting! I am a PhD candidate at the University of Georgia Institute of Bioinformatics working in [Dr. Justin Bahl's Lab](https://vet.uga.edu/person/justin-bahl/). While at UGA, I have been active in promoting graduate student welfare and science communication. I am an active CWA-UCWGA union member. I have held leadership roles in the Bioinformatics Graduate Student Association, UGA Graduate Pride, and Athens Science Observer. I have also helped organize peer mentoring for the International Society of Nonbinary Scientists, seminar speakers for the Bioinformatics department, and graduate student satisfaction survey development. My research thus far has been focused on phylodynamics tools and methods, applied to avian influenza and SARS-CoV-2. I'm primarily interested in three research themes:
 
 1. How our choices in Bayesian phylogenetics impact epidemiologically relevant parameters in a way which is not expected (e.g., subsampling, passaging).
