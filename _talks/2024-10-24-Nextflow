@@ -1,0 +1,11 @@
+---
+title: "BWrangling Reproducibility in your Research with Nextflow, Conda, and Docker"
+collection: talks
+type: "Tutorial"
+permalink: /talks/2024-10-24-Nextflow
+venue: "UGA Infectious Disease Interest Group"
+date: 2024-10-24
+location: "University of Georgia, Athens, GA, USA"
+---
+
+A brief introduction to Nextflow, Conda, and Docker for biostatisticians and epidemiologists at UGA. A case example taken from an REU mentee, Victoria, is included to demonstrate how Nextflow can be used in a research project. [Link to slide deck...](https://docs.google.com/presentation/d/1-NouaZswwaMYCcjPvCXxK5-MiXoN2WuJg5i0eL03Xrs/edit?usp=sharing)
