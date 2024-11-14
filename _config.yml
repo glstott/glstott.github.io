@@ -23,8 +23,8 @@ author:
   # Biographic information
   avatar           : "Stott_Garrick.jpg"
   name             : "Guppy L. Stott"
-  pronouns         : # example: "she/her"  
-  bio              : "Ph.D. candidate investigating topics in molecular epidemiology with a focus on influenza and methods for better phylodynamic modeling"
+  pronouns         : "they/e"  
+  bio              : "Ph.D. candidate investigating phylodynamic methods to improve public health using extensible pipelines"
   location         : #"Nowhere, usa"
   employer         : "University of Georgia"
   uri              : # URL
