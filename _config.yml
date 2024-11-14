@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Guppy Stott, MStat"
+title                    : "Guppy Stott"
 title_separator          : "-"
 name                     : &name "Guppy L. Stott"
 description              : &description "Ph.D. Candidate studying molecular epidemiology using phylodynamic methods"
@@ -24,8 +24,8 @@ author:
   avatar           : "Stott_Garrick.jpg"
   name             : "Guppy L. Stott"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. candidate investigating topics in molecular epidemiology with a focus on respiratory viruses like HPAI and SARS-CoV-2 and methods for better phylodynamic modeling"
-  location         : "Athens, GA, USA; Charlotte, NC, USA"
+  bio              : "Ph.D. candidate investigating topics in molecular epidemiology with a focus on influenza and methods for better phylodynamic modeling"
+  location         : #"Nowhere, usa"
   employer         : "University of Georgia"
   uri              : # URL
   email            : "guppy.stott@uga.edu" 
@@ -34,7 +34,7 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=L8W1hJwAAAAJ&hl"
   impactstory      : # URL
-  orcid            : "https://orcid.org/0000-0002-3382-8221"
+  orcid            : #"https://orcid.org/0000-0002-3382-8221"
   semantic         : # URL
   pubmed           : # URL
   researchgate     : # URL
