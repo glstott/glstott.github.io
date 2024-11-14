@@ -1,6 +1,7 @@
 ---
 title: "Beyond scale-free networks: integrating multilayer social networks with molecular clusters in the local spread of COVID-19"
 collection: publications
+category: manuscripts
 permalink: /publication/2023-12-09-Beyond-Scale-free-networks
 excerpt: 'This paper uses our preprint, Phylogeny and Metadata Network Database for Epidemiologic Surveillance, to investigate the scale-free network assumption in the context of local molecular clusters.'
 date: 2023-12-09
