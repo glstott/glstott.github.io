@@ -8,6 +8,8 @@ tags:
   - Sampling frequency
 ---
 
+This post will focus on ESS values in Phylogenetics. What are they and how do we improve them?
+
 ESS in Phylogenetics
 ==========================
 
