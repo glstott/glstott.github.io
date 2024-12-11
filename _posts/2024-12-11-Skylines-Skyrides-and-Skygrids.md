@@ -1,5 +1,5 @@
 ---
-title: 'ESS in Phylogenetics'
+title: 'Skylines, Skyrides, and Skygrids'
 date: 2024-12-11
 permalink: /posts/2024-12-11-Skylines-Skyrides-and-Skygrids/
 tags:
