@@ -9,8 +9,6 @@ tags:
   - estimated population size
 ---
 
-A brief discussion of a few different non-parametric coalescent models. A special focus is given to Skygrid and discussing how to determine a good number of segments for your analysis. 
-
 Skylines, Skyrides, and Skygrids
 ==========================
  
