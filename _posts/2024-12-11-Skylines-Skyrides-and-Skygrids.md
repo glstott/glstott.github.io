@@ -1,7 +1,7 @@
 ---
 title: 'Skylines, Skyrides, and Skygrids'
 date: 2024-12-11
-permalink: /posts/2024-12-11-Skylines-Skyrides-and-Skygrids/
+permalink: /posts/2024/12/Skylines-Skyrides-and-Skygrids/
 tags:
   - Skyline
   - Skygrid
@@ -13,8 +13,6 @@ A brief discussion of a few different non-parametric coalescent models. A specia
 
 Skylines, Skyrides, and Skygrids
 ==========================
-
-# Skylines, Skyrides, and Skygrids
  
 Recently, our lab has been going through changes… To our skyline plots. In the past, our lab, as a rule, has stuck to the Skyride coalescent model. Our bread-and-butter has recently become second fiddle to a (not-so-new) kid on the block: Skygrid. Because many in the group were used to generalized skyline plots and Skyride, this led to some confusion in how these different nonparametric coalescent models work, what to consider when using them, etc. There's plenty written on the topic, but much of it is not super accessible. So here's my go at it, starting with a brief overview of the various nonparametric coalescent models before discussing some nitty-gritty elements with Skyride and Skygrid.
  
