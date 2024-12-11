@@ -24,7 +24,7 @@ First, what are we even talking about here? Models that allow us to estimate eff
  
 For a while, we were stuck with simple parametric coalescent models, like exponential growth or constant population size models. While nifty, these models were only useful if the sampled population fit those demographics. In contrast, nonparametric coalescent models offer a more flexible tool to enable estimation over time, giving us more accurate estimates of effective population size. [This article by Hill and Baele](https://doi.org/10.1093/molbev/msz172) provides an excellent overview of the different nonparametric coalescent models and a practical protocol for using Skygrid in BEAST. In particular, I'd like to highlight Figure 1 from their paper (below), which demonstrates the differences between classical skyline, skyride, and skygrid plots in a simple 7 taxa tree.
  
-![Conceptual representation of various nonparametric coalescent models on a phylogeny of n = 7 heterochronous sequences. The classic skyline (Pybus et al. 2000) and its extension, the generalized skyline (Strimmer and Pybus 2001), were the first among a still increasing collection of nonparametric coalescent models. Initially estimated using maximum likelihood inference on a fixed phylogeny, these models have been extended for use in Bayesian framework while accommodating phylogenetic uncertainty (Drummond et al. 2005). Recent developments include the Skyride (Minin et al. 2008), the Skygrid (Gill et al. 2013), and its extension to incorporate covariates (Gill et al. 2016), which all employ smoothing priors.]("../images/Exported image 20241210110947-0.jpeg")  
+![Conceptual representation of various nonparametric coalescent models on a phylogeny of n = 7 heterochronous sequences. The classic skyline (Pybus et al. 2000) and its extension, the generalized skyline (Strimmer and Pybus 2001), were the first among a still increasing collection of nonparametric coalescent models. Initially estimated using maximum likelihood inference on a fixed phylogeny, these models have been extended for use in Bayesian framework while accommodating phylogenetic uncertainty (Drummond et al. 2005). Recent developments include the Skyride (Minin et al. 2008), the Skygrid (Gill et al. 2013), and its extension to incorporate covariates (Gill et al. 2016), which all employ smoothing priors.](https://raw.githubusercontent.com/glstott/glstott.github.io/refs/heads/master/images/Exported%20image%2020241210110947-0.jpeg)  
 
 As you can see, the Skyline and Skyride plots both make use of variable-length bins of time for their demographic model. These bins correspond to the amount of time between coalescent events. In contrast, Skygrid leverages bins of equal size specified by the user. As a result, Skygrid, unlike Skyride or Skyline, requires a user to specify a cutoff value, K, (sometime before the first root of the tree) and the number of population sizes (i.e., how many time segments should it be divided into?). Both Skyride and Skygrid make use of a smoothing parameter. This smoothing prior considers all coalescent events and sampling times and uses them to smooth the population trajectory.
  
@@ -36,7 +36,7 @@ One big downside to Skygrid is it makes us do work. Now, instead of having no pa
  
 The harder part is figuring out how many segments to use. This is dealer's choice! Like with everything in statistical modeling, there are trade-offs and more than 1 right answer. As you increase the number of bins, you're increasing the complexity of your model, slowing down your run and possibly leading to issues in getting your model to converge. In contrast, if you have too few bins, you might have too coarse of a look at your population dynamics.
  
- ![Exported image]("../images/Exported image 20241210110948-1.png")  
+ ![image](https://raw.githubusercontent.com/glstott/glstott.github.io/refs/heads/master/images/Exported%20image%2020241210110948-1.png) 
 
 I get it, I get it. That's not satisfying. Here are some basic guidelines to get you started:
  
@@ -48,7 +48,7 @@ Again, this is not the best answer. That leaves between 1 and 730 time bins. Nex
  
 Another, more complex item to consider is smoothing. This is largely taken into account by an uninformative prior, Tau. However, there is a chance that this parameter ends up oversmoothing. That is, there is a chance that the smoothing parameter ends up smoothing in a way which overwhelms your data. According to [Parag, et al.](https://doi.org/10.1093/sysbio/syab037), this is guaranteed for Skyride, and in Skygrid, could be avoided by transforming the prior. In lieu of that, we can do some quick checks afterwards with a formula they developed. 
 
-![screenshot]("../images/Pasted image 20241211151651.png")
+![snippet](https://raw.githubusercontent.com/glstott/glstott.github.io/refs/heads/master/images/Pasted%20image%2020241211151651.png)
 
 All this being said, there is no single right answer to the number of grid points to use. To help with oversmoothing and identifiability considerations, a colleague of mine, Gabriella Veytsel, developed a web app to highlight time segments without coalescent events and perform the omega calculation to see if your grid selections make sense. An alpha version of this app is hosted here: https://glstott.shinyapps.io/segmentation-finder/
 
