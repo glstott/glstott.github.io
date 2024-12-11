@@ -9,6 +9,8 @@ tags:
   - estimated population size
 ---
 
+This blog post will focus on Skygrid, dabbling in Skyride and Skylines in general before talking about the specifics around Skygrid parameter selection.
+
 Skylines, Skyrides, and Skygrids
 ==========================
  
