@@ -8,8 +8,6 @@ tags:
   - Sampling frequency
 ---
 
-A brief discussion of what ESS is, why it matters, and how to boost it. A particular attention is payed to sampling frequency since this is oft overlooked in more general MCMC guides.
-
 ESS in Phylogenetics
 ==========================
 
